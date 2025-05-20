@@ -1,46 +1,21 @@
 <script>
-	let { children } = $props();
-	import { setContext } from 'svelte';
-	import Rodape from './Rodape.svelte';
-
-	let busca = $state('');
-	setContext('busca', () => busca); // https://svelte.dev/docs/svelte/compiler-warnings#state_referenced_locally
-</script>
-
-<nav class="navbar navbar-expand-md bg-primary-subtle border-bottom border-body" data-bs-theme="dark">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="/">
-			<img src="/favicon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" />
-			Maria's
-		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="/lista">Lista</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="/geradordesenhas">Senha</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="/unidades">Unidades</a>
-				</li>
-			</ul>
-			<form class="d-flex" role="search">
-				<input bind:value={busca} class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-			</form>
-		</div>
-	</div>
-</nav>
-
-{@render children()}
-
-<Rodape></Rodape>
-
-<style>
-	:global(body) {
-			background-color: #dae5ec;
-		}
-</style>
+    import Header from '$lib/components/Header.svelte';
+    import SideBar from '$lib/components/SideBar.svelte';
+    import 'bootstrap/dist/css/bootstrap.css';
+    import 'bootstrap-icons/font/bootstrap-icons.css';
+    import * as bootstrap from 'bootstrap';
+   
+    let { children } = $props();
+  </script>
+   
+  <Header />
+   
+  <div class="container-fluid py-5 mt-1 mb-4">
+    {@render children()}
+  </div>
+   
+  <footer class="navbar bg-body-tertiary fixed-bottom">
+    <div class="container-fluid">Made with SvelteKit, CapacitorJS, Drizzle, Sql.js and Bootstrap</div>
+  </footer>
+   
+  <SideBar />

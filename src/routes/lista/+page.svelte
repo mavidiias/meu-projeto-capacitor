@@ -1,5 +1,4 @@
 <script>
-	import Rodape from '../Rodape.svelte';
 
 	const tarefas = $state([]);
 	let tarefaNova = $state();

@@ -1,0 +1,9 @@
+<script>
+   
+
+   function gerarnumero() {
+
+   }
+
+   
+</script>
