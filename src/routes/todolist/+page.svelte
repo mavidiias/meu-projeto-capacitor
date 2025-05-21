@@ -29,7 +29,15 @@
   conteudoTarefaEditando = tarefa.conteudo;
     }
   
-    function confirmarEdicao() {}
+    function confirmarEdicao() {
+      conteudoTarefaEditando = conteudoTarefaEditando.trim();
+  if (!conteudoTarefaEditando) {
+    mensagemToast.show();
+    return;
+  }
+  tarefaEditando.conteudo = conteudoTarefaEditando;
+  tarefaEditando = undefined;
+    }
   
     function cancelarEdicao() {
       tarefaEditando = undefined;
