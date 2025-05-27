@@ -43,7 +43,9 @@
       tarefaEditando = undefined;
     }
   
-    function excluirTarefa(tarefa) {}
+    function excluirTarefa(tarefa) {
+      
+    }
   
     function confirmarExclusao() {}
   

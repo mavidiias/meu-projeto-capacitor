@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top bg-body-tertiary">
+<nav class="navbar fixed-top bg-primary-subtle">
     <button class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#mySideBar" aria-label="toggleSidebar">
       <i class="bi bi-list"></i>
     </button>

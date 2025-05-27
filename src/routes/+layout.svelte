@@ -14,8 +14,8 @@
     {@render children()}
   </div>
    
-  <footer class="navbar bg-body-tertiary fixed-bottom">
-    <div class="container-fluid">Made with SvelteKit, CapacitorJS, Drizzle, Sql.js and Bootstrap</div>
+  <footer class="navbar bg-body-tertiary fixed-bottom bg-primary-subtle">
+    <div class="container-fluid d-flex justify-content-center align-items-center "><i class="bi bi-heart-fill text-primary"></i></div>
   </footer>
    
   <SideBar />
