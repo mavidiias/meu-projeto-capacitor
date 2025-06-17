@@ -24,7 +24,7 @@
 </div>
 <div>
 	<ul>
-		{#each filtrados as termo}
+		{#each filtradas as termo}
 			<li><a href="/dicionario/{termo.palavra}">{termo?.palavra}</a></li>
 		{/each}
 	</ul>
