@@ -57,6 +57,7 @@
   </script>
   
   <div class="fixed-top pt-5" style="z-index: 1020;">
+    <h2 class="pt-3" style="text-align: center;">Lista de Terefas <i class="bi bi-list-stars"></i></h2>
     <form class="container-fluid input-group px-4 pt-3" onsubmit={adicionarTarefa}>
       <input class="form-control form-control-lg" placeholder="Nova tarefa" bind:value={novaTarefa} />
       <button type="submit" class="btn btn-primary input-group-text" aria-label="adicionar"> <i class="bi bi-plus-lg"></i> </button>

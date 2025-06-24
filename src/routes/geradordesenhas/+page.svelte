@@ -62,8 +62,8 @@
   let senhas = gerarvariassenhas();
 </script>
 
-<main>
-  <h1>Gerador de Senhas</h1>
+<div class="card bg-body-tertiary" style="width: 18rem; align-items: center; margin: 20px auto;">
+  <h2 class="card-title">Gerador de Senhas <i class="bi bi-lock"></i></h2>
 
   <div>
     <label for="tamanhodasenha">Comprimento da senha:</label>
@@ -99,7 +99,7 @@
   <button on:click={() => senhas = gerarvariassenhas()}>Gerar Senhas</button>
 
   {#if senhas.length > 0}
-    <h2>Senhas Geradas:</h2>
+    <h2 class="card-title">Senhas Geradas:</h2>
     <ul>
       {#each senhas as senha}
         <li>
@@ -109,14 +109,14 @@
       {/each}
     </ul>
   {/if}
-</main>
+</div>
 
 
 
 <style>
-  main {
+  div {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 10px;
 	text-align: center;
   }
 

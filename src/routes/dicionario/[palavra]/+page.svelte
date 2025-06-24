@@ -7,6 +7,8 @@
         <h5 class="card-title text-center">{data.palavra[0].palavra} <i class="bi bi-bookmark-heart"></i></h5>
         <h6 class="card-title">Definição:</h6>
         <p class="card-text">{data.palavra[0].definicao}</p>
+        <h6 class="card-title">Sinônimos:</h6>
+        <p class="card-text">{data.palavra[0].sinonimos}</p>
         <div class="text-center">
             <button class="btn bg-primary-subtle" onclick={() => window.history.back()}>Voltar</button>
          </div>
